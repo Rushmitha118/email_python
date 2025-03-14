@@ -10,14 +10,14 @@ def read_data_send_mail():
     except:
         print("file not available")
 
-    sender_email = "ganjirushmitha2002@gmail.com"
+    sender_email = "**********"
 
     for i in student_mails:
         otp_number = random.randint(100000, 999999)
         print(otp_number)
         s = smtplib.SMTP("smtp.gmail.com", 587)
         s.starttls()
-        s.login(sender_email, "qkhw mnvx oukz pjor")
+        s.login(sender_email, "***********")
         message = f"Hi! Your OTP number is {otp_number}"
 
         try:
